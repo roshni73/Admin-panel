@@ -1,0 +1,32 @@
+/* Style for the overall 'carts' container */
+.carts {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 90%;
+}
+.carts > div {
+    border :none;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.carts h1 {
+    color: #ed7438;
+    margin-bottom: 15px;
+}
+
+.carts h2 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.products {
+    
+    box-shadow: 0 0 5px #ccc;
+    padding: 10px;
+}
+
+.products img {
+    max-width: 100px;
+    height: auto;
+}

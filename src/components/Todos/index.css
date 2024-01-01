@@ -1,0 +1,64 @@
+.to-do, .not-completed {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px #ccc;
+  }
+  
+  .to-do div, .not-completed div {
+    width: 80%;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .to-do h1, .not-completed h1 {
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .to-do h2, .not-completed h2 {
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .to-do p, .not-completed p {
+    color: #666;
+  }
+  .add-todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .add-todo input,
+  .add-todo select,
+  .add-todo button {
+    width:500px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-todo button {
+    cursor: pointer;
+    background-color:#ed7438;
+    color: white;
+    border: none;
+  }
+  
+  .add-todo button:hover {
+    background-color: #d19374;
+    color:black;
+  }

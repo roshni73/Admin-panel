@@ -1,0 +1,24 @@
+.admin-list {
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .admin-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-list th, .admin-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .admin-list th {
+    background-color: #ed7438;
+    color: white; 
+  }
+  
+  .admin-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }

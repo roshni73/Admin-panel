@@ -1,0 +1,25 @@
+
+.main {
+    display: flex;
+    height: 100vh; 
+    background-color: #F6F7FB;
+  }
+  
+  .nav {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    width:200px;
+    
+  }
+  .wrapper {
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+
+  }
+  

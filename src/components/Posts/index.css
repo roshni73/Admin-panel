@@ -1,0 +1,47 @@
+
+.Post-cards {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.Post-cards h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.posts > div {
+    padding: 15px;
+    margin-bottom: 20px;
+    flex-basis: calc(33.33% - 20px);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.posts h2 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.posts p {
+    color: #666;
+}
+.reactions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.reactions svg {
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.reactions svg:hover {
+    color: #333;
+}
