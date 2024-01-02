@@ -41,7 +41,8 @@ function Users() {
         const filteredUsers = res.data.users.filter(
           (resUser: UserInterface) => !localUsers.some(localUser => localUser.id === resUser.id)
         );
-        setUsers([...filteredUsers, ...localUsers].sort((a, b) => a.id - b.id));
+        setUsers([...filteredUsers, ...localUsers].sort((a, b) =>  b.id- a.id));
+
       } catch (err: unknown) {
         if (err instanceof Error) {
           setErrorMessage(err.message);
