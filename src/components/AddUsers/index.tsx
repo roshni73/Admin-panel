@@ -27,9 +27,7 @@ const validationSchema = Yup.object<UserInterface>({
   phone: Yup.string().required('Phone number is required')
     .matches(/^(\+\d{1,3}[- ]?)?(\d{3}[- ]?\d{3}[- ]?\d{4})$/, 'Phone number is not valid'),
 });
-
 const AddUsers = () => {
-
   const { id } = useParams<{ id?: string }>();
   const [currentUser, setCurrentUser] = useState<UserInterface | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -127,8 +125,9 @@ const AddUsers = () => {
 
   return (
     <Container>
-
-      <h1>{currentUser ? 'Edit User' : 'Add User'}</h1>
+      <div className="user-details">
+        <h1>{currentUser ? 'Edit User' : 'Add User'}</h1>
+      </div>
       {successMessage && <div className="success">{successMessage}</div>}
       {errorMessage ? (
         <div className='error'>Error: {errorMessage}</div>
@@ -151,6 +150,9 @@ const AddUsers = () => {
         >
           {({ isSubmitting }) => (
             <Form>
+              <div className="user-btn">
+                <button onClick={() => window.history.back()}>X</button>
+              </div>
               <ErrorMessage name="firstName" component="div" className="input-error" />
               <Field type="text" name="firstName" placeholder="First Name" />
 

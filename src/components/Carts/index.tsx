@@ -40,19 +40,24 @@ function Carts() {
                   <p>User ID: {cart.userId}</p>
                   <p>Total Products: {cart.totalProducts}</p>
                   <p>Total Quantity: {cart.totalQuantity}</p>
-                  <h2>Products</h2>
-                  {cart.products.map((product, productIndex) => (
-                    <div className='products'
-                      key={productIndex}>
-                      <p>Title: {product.title}</p>
-                      <p>Price: {product.price}</p>
-                      <p>Quantity: {product.quantity}</p>
-                      <p>Total: {product.total}</p>
-                      <p>Discount Percentage: {product.discountPercentage}</p>
-                      <p>Discounted Price: {product.discountedPrice}</p>
-                      <img src={product.thumbnail} alt={product.title} />
-                    </div>
-                  ))}
+                  <div className='products-dtls'>
+                    <h2>Products</h2>
+                    {cart.products.map((product, productIndex) => (
+                      <div className='products'>
+                      <div className='products-list'>
+                        key={productIndex}
+      
+                            <p>Title: {product.title}</p>
+                            <p>Price: {product.price}</p>
+                            <p>Quantity: {product.quantity}</p>
+                            <p>Total: {product.total}</p>
+                            <p>Discount Percentage: {product.discountPercentage}</p>
+                            <p>Discounted Price: {product.discountedPrice}</p>
+                            <img src={product.thumbnail} alt={product.title} />
+                        </div>  
+                      </div>
+                    ))}
+                  </div>
                 </div>
               ))
             ) : (

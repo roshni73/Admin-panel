@@ -25,9 +25,9 @@ const Navbar = ({ title }: NavbarProps) => {
 
   return (
     <div className="navbar">
-      <h2>{title}</h2>
+      <h2>{title}</h2><br></br>
       <div className="navbar-links">
-        <NavLink to="/Dashboard">Dashboard</NavLink>
+        <NavLink to="/Users"> Dashboard</NavLink>
 
         <div className="dropdown-wrapper">
           <NavLink to="/Admin" onClick={toggleAdminDropdown}>Admin
@@ -45,17 +45,6 @@ const Navbar = ({ title }: NavbarProps) => {
             <div className="dropdown-content">
               <NavLink to="/AddUsers">Add Users</NavLink>
               <NavLink to="/Users">User List</NavLink>
-            </div>
-          )}
-        </div>
-        <div className="dropdown-wrapper">
-          <NavLink to="/Pages" onClick={togglePagesDropdown}>
-            Pages
-          </NavLink>
-          {showPagesDropdown && (
-            <div className="dropdown-content">
-              <NavLink to="/Pages/About">About</NavLink>
-              <NavLink to="/Pages/Contact">Contact</NavLink>
             </div>
           )}
         </div>

@@ -68,10 +68,6 @@ function UserDetails() {
         <p>Gender: {user.gender}</p>
         <p>Email: {user.email}</p>
         <p>Phone: {user.phone}</p>
-        <div className="options">
-          <button onClick={() => onclick}>Edit</button>
-          <button onClick={() => onclick}>Delete</button>
-        </div>
       </div>
     </Container>
   );

@@ -47,20 +47,5 @@
   }
   .options {
     display: flex;
-    justify-content: flex-end;
-  }
-  
-  .options button {
-    margin-left: 10px;
-    background-color: #ed7438; 
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-    margin-right: 20px;
-  }
-  
-  .options button:hover {
-    background-color: #e1753f;
-    color:black
+    justify-content:space-between;
   }

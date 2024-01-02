@@ -30,7 +30,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #de8558;
 }
 
 .success {
@@ -49,6 +49,11 @@ button:hover {
   color: red;
   text-align: left;
   margin-bottom: 5px;
+}
+.user-btn{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
 }
 
 /* form {

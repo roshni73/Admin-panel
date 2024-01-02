@@ -84,8 +84,6 @@ function Users() {
   const totalPages = Math.ceil(users.length / itemsPerPage);
   const currentItems = users.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
-
-
   return (
     <Container>
       <Link to="/AddUsers"></Link>

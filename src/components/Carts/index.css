@@ -1,4 +1,4 @@
-/* Style for the overall 'carts' container */
+
 .carts {
     display: flex;
     flex-direction: column;
@@ -21,12 +21,24 @@
 }
 
 .products {
-    
-    box-shadow: 0 0 5px #ccc;
-    padding: 10px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
 
-.products img {
-    max-width: 100px;
+  }
+  
+  .products p {
+    margin: 10px 0;
+    color:black;
+  }
+  
+  .products img {
+    max-width:80%;
     height: auto;
-}
+    margin-top: 20px;
+  }
