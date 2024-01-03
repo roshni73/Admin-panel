@@ -1,6 +1,6 @@
 interface ButtonProps {
   label: string;
-  onClick: () => void;
+  onClick?: () => void;
   navigate?: (path: string) => void;
   user?: { id: number };
   icon?: JSX.Element;

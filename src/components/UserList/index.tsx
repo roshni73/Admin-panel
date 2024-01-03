@@ -128,9 +128,9 @@ function Users() {
                       <td>{user.email}</td>
                       <td>{user.phone}</td>
                       <td>
-                        <Button  onClick={() => viewUser(user.id)} icon={<MdRemoveRedEye />} />
-                        <Button onClick={() => deleteUser(user.id)} icon={<MdDelete />} />
-                        <Button  onClick={() => editUser(user.id)} icon={<MdEdit />} />
+                        <Button label="" onClick={() => viewUser(user.id)} icon={<MdRemoveRedEye />} />
+                        <Button label="" onClick={() => deleteUser(user.id)} icon={<MdDelete />} />
+                        <Button label="" onClick={() => editUser(user.id)} icon={<MdEdit />} />
                       </td>
                     </tr>
                   ))
