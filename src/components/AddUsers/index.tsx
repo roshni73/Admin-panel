@@ -178,10 +178,12 @@ const AddUsers = () => {
 
               <ErrorMessage name="phone" component="div" className="input-error" />
               <Field type="tel" name="phone" placeholder="Phone Number" />
+              
+               <button type="submit" disabled={isSubmitting}>
+                   {isSubmitting ? 'Loading...' : (currentUser ? 'Update User' : 'Add Users')}
+                </button>
 
-              <button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? 'Loading...' : (currentUser ? 'Update User' : 'Add Users')}
-              </button>
+              
             </Form>
           )}
         </Formik>

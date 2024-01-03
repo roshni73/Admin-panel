@@ -1,4 +1,5 @@
 import { MdRemoveRedEye, MdEdit, MdDelete } from 'react-icons/md';
+import Button from '#components/Button';
 import { useCallback, useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
@@ -127,9 +128,9 @@ function Users() {
                       <td>{user.email}</td>
                       <td>{user.phone}</td>
                       <td>
-                        <button onClick={() => viewUser(user.id)}><MdRemoveRedEye /></button>
-                        <button onClick={() => deleteUser(user.id)}><MdDelete /></button>
-                        <button onClick={() => editUser(user.id)}><MdEdit /></button>
+                        <Button  onClick={() => viewUser(user.id)} icon={<MdRemoveRedEye />} />
+                        <Button onClick={() => deleteUser(user.id)} icon={<MdDelete />} />
+                        <Button  onClick={() => editUser(user.id)} icon={<MdEdit />} />
                       </td>
                     </tr>
                   ))
@@ -144,9 +145,11 @@ function Users() {
         </>
       )}
       <div>
-        <button className="button-pagination" onClick={() => setCurrentPage((old) => Math.max(old - 1, 1))}>Previous</button>
-        <button className="button-pagination" onClick={() => setCurrentPage((old) => Math.min(old + 1, totalPages))}>Next</button>
+        
+        <Button label="Previous" onClick={() => setCurrentPage((old) => Math.max(old - 1, 1))} />
+        <Button label="Next" onClick={() => setCurrentPage((old) => Math.min(old + 1, totalPages))} />
       </div>
+        
     </Container>
   );
 }

@@ -9,7 +9,6 @@ interface NavbarProps {
 const Navbar = ({ title }: NavbarProps) => {
   const [showAdminDropdown, setShowAdminDropdown] = useState(false);
   const [showUsersDropdown, setShowUsersDropdown] = useState(false);
-  const [showPagesDropdown, setShowPagesDropdown] = useState(false);
 
   const toggleAdminDropdown = () => {
     setShowAdminDropdown(!showAdminDropdown);
@@ -17,10 +16,6 @@ const Navbar = ({ title }: NavbarProps) => {
 
   const toggleUsersDropdown = () => {
     setShowUsersDropdown(!showUsersDropdown);
-  };
-
-  const togglePagesDropdown = () => {
-    setShowPagesDropdown(!showPagesDropdown);
   };
 
   return (
@@ -32,10 +27,6 @@ const Navbar = ({ title }: NavbarProps) => {
         <div className="dropdown-wrapper">
           <NavLink to="/Admin" onClick={toggleAdminDropdown}>Admin
           </NavLink>
-          {showAdminDropdown && (
-            <div className="dropdown-content">
-            </div>
-          )}
         </div>
         <div className="dropdown-wrapper">
           <NavLink to="/Users" onClick={toggleUsersDropdown}>

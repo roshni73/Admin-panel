@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
+import Button from "#components/Button";
 
 import Container from "#components/Container";
 import { getLocalUserById } from "#utils/LocalUser";
@@ -50,14 +51,13 @@ function UserDetails() {
     <Container>
       <Link to="/users"></Link>
       <div className="single-usr-dtls">
-        <nav className="nav-users">
-          <button onClick={() => navigate(`/Posts/${user.id}`)}>Posts</button>
-          <button onClick={() => navigate(`/Todos/${user.id}`)}>Todos</button>
-          <button onClick={() => navigate(`/Carts/${user.id}`)}>Carts</button>
-          <div className="user-btn">
-            <button onClick={() => window.history.back()}>X</button>
-          </div>
-        </nav>
+        <div className="nav-users">
+          <Button label="Posts" navigate={navigate} user={user} />
+          <Button label="Todos" navigate={navigate} user={user} />
+          <Button label="Carts" navigate={navigate} user={user} />
+          <Button label="X" onClick={() => window.history.back()} />
+         
+        </div>
         <div className="title">
           <h2>User Details:</h2><br />
         </div>
