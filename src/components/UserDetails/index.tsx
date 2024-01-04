@@ -52,9 +52,9 @@ function UserDetails() {
       <Link to="/users"></Link>
       <div className="single-usr-dtls">
         <div className="nav-users">
-          <Button label="Posts" navigate={navigate} user={user} />
-          <Button label="Todos" navigate={navigate} user={user} />
-          <Button label="Carts" navigate={navigate} user={user} />
+          <Button label="Posts" onClick={() => navigate(`/Posts/${user.id}`)} />
+          <Button label="Todos" onClick={() => navigate(`/Todos/${user.id}`)} />
+          <Button label="Carts" onClick={() => navigate(`/Carts/${user.id}`)} />
           <Button label="X" onClick={() => window.history.back()} />
          
         </div>
